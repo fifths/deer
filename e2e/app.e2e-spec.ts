@@ -1,10 +1,10 @@
-import { DeerPage } from './app.po';
+import { Ng2BootstrapAdminPage } from './app.po';
 
-describe('deer App', () => {
-  let page: DeerPage;
+describe('ng2-bootstrap-admin App', () => {
+  let page: Ng2BootstrapAdminPage;
 
   beforeEach(() => {
-    page = new DeerPage();
+    page = new Ng2BootstrapAdminPage();
   });
 
   it('should display message saying app works', () => {

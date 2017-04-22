@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class DeerPage {
+export class Ng2BootstrapAdminPage {
   navigateTo() {
     return browser.get('/');
   }
