@@ -1,9 +1,18 @@
-body{
-  background-color: #eee;
+.login {
+  background-color: #252830;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 .login-block {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 540px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  padding: 32px;
 }
 .form-signin {
   max-width: 330px;
