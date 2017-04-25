@@ -1,11 +1,16 @@
 import {Routes, RouterModule} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
 import {PagesComponent} from './pages.component';
+import {PreloaderComponent} from './preloader/preloader.component';
 
 export const routes: Routes = [
     {
         path: 'login',
         loadChildren: 'app/pages/login/login.module#LoginModule'
+    },
+    {
+        path: 'preloader',
+        component: PreloaderComponent,
     },
     {
         path: 'pages',

@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
     constructor(@Inject(FormBuilder) fb: FormBuilder) {
         this.form = fb.group({
             'email': ['', Validators.compose([Validators.required, Validators.minLength(4)])],
-            'password': ['', Validators.compose([Validators.required, Validators.minLength(4)])]
+            'password': ['', Validators.compose([Validators.required, Validators.minLength(4)])],
+            'remember': '',
         });
     }
 
@@ -23,9 +24,9 @@ export class LoginComponent implements OnInit {
     }
 
     signIn() {
-        console.log(this.form.controls['email'].value);
-        console.log(this.form.controls['password'].value);
-
+        // console.log(this.form.controls['email'].value);
+        // console.log(this.form.controls['password'].value);
+        // console.log(this.form.controls['remember'].value);
         if (this.form.valid) {
             // to do;
             this.alerts = [{
@@ -39,7 +40,7 @@ export class LoginComponent implements OnInit {
                 id: 1,
                 type: 'danger',
                 dismissible: true,
-                message: JSON.stringify(this.form.value) + 'Status:' + this.form.status,
+                message: JSON.stringify(this.form.value) + this.form.status,
             }];
         }
     }
