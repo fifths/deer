@@ -1,20 +1,18 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {CommonModule} from '@angular/common';
+import {NgAllModule} from '../../theme/ngall.module';
 import {LoginComponent} from './login.component';
 import {routing} from './login.routing';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgbModule,
-        routing
-    ],
-    declarations: [LoginComponent]
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    NgAllModule,
+    routing
+  ],
+  declarations: [LoginComponent]
 })
-export class LoginModule {
-}
+export class LoginModule { }

@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {routing} from './dashboard.routing';
 import {DashboardComponent} from './dashboard.component';
+import {routing} from './dashboard.routing';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        routing
-    ],
-    declarations: [DashboardComponent]
+  imports: [
+    CommonModule,
+    routing
+  ],
+  declarations: [DashboardComponent]
 })
 export class DashboardModule {
 }

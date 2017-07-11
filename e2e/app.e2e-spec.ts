@@ -1,14 +1,14 @@
-import { Ng2BootstrapAdminPage } from './app.po';
+import { LeePage } from './app.po';
 
-describe('ng2-bootstrap-admin App', () => {
-  let page: Ng2BootstrapAdminPage;
+describe('lee App', () => {
+  let page: LeePage;
 
   beforeEach(() => {
-    page = new Ng2BootstrapAdminPage();
+    page = new LeePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });
